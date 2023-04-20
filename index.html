@@ -20,54 +20,60 @@
           Want more details?
         </a>
     </div>
-    <div class="main-element-section">
-      <p id="task-to-add">
-        <label class="new-task-label" for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input 
-              id="new-task"
-              class="task task-input" 
-              type="text">
-          <button class="btn">Add</button>
-        </div>
-      </p>
-      <h3 class="title">Todo</h3>
-      <ul class="tasks-list" id="incompleted-tasks">
-        <li class="tasks-list-item">
-          <input class="task-input" type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task task-input">
-          <button class="edit btn">Edit</button>
-          <button class="delete btn">
-            <img class="remove-ic" src="./remove.svg">
-          </button>
-        </li>
-        <li class="edit-mode tasks-list-item">
-          <input class="task-input" type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input 
-              type="text" 
-              value="Go Shopping" 
-              class="task task-input">
-          <button class="edit btn">Save</button>
-          <button class="delete btn">
-            <img class="remove-ic" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-      <h3 class="title">Completed</h3>
-      <ul class="tasks-list" id="completed-tasks">
-        <li class="tasks-list-item">
-          <input class="task-input" type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task task-input">
-          <button class="edit btn">Edit</button>
-          <button class="delete btn">
-            <img class="remove-ic" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-    </div>
+    <main class="main-element-section">
+      <form>
+        <section id="task-to-add">
+          <h3 class="title">Add Item</h3>
+          <div class="task-row-wrapper">
+            <input 
+                id="new-task"
+                class="task task-input" 
+                type="text">
+            <button type="button" class="btn">Add</button>
+          </div>
+        </section>
+        <section>
+          <h3 class="title">Todo</h3>
+          <ul class="tasks-list" id="incompleted-tasks">
+            <li class="tasks-list-item">
+              <input class="task-input" type="checkbox">
+              <label class="task">Pay Bills</label>
+              <input type="text" class="task task-input">
+              <button type="button" class="edit btn">Edit</button>
+              <button type="button" class="delete btn">
+                <img class="remove-ic" src="./remove.svg">
+              </button>
+            </li>
+            <li class="edit-mode tasks-list-item">
+              <input class="task-input" type="checkbox">
+              <label class="task">Go Shopping</label>
+              <input 
+                  type="text" 
+                  value="Go Shopping" 
+                  class="task task-input">
+              <button type="button" class="edit btn">Save</button>
+              <button type="button" class="delete btn">
+                <img class="remove-ic" src="./remove.svg">
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 class="title">Completed</h3>
+          <ul class="tasks-list" id="completed-tasks">
+            <li class="tasks-list-item">
+              <input class="task-input" type="checkbox" checked>
+              <label class="task">See the Doctor</label>
+              <input type="text" class="task task-input">
+              <button type="button" class="edit btn">Edit</button>
+              <button type="button" class="delete btn">
+                <img class="remove-ic" src="./remove.svg">
+              </button>
+            </li>
+          </ul>
+        </section>
+      </form>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
